@@ -13,10 +13,6 @@ function openCity(evt, cityName) {
 }
 
 
-document.querySelectorAll(".link-list").forEach(list => {
-	for (const li of list.children) {
-		for (const a of li.getElementsByTagName("a")) {
-			if (!a.target) a.target = "_blank"
-		}
-	}
+document.querySelectorAll(".link-list>li>a").forEach(a => {
+	if (!a.target) a.target = "_blank"
 })
