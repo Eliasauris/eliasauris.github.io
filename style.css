@@ -46,6 +46,6 @@ body {
 	margin-top: 0.5em;
 }
 
-.link-list->li>a {
-	color: blue;
-}
+/*prevents links from graying out when clicked*/
+.link-list>li>a {color: blue}
+.link-list>li>a:active {color: red}
