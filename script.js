@@ -13,6 +13,5 @@ function openCity(evt, cityName) {
 }
 
 
-document.querySelectorAll(".link-list>li>a").forEach(a => {
-	if (!a.target) a.target = "_blank"
-})
+// changes the default a.target inside link-list items to be '_blank'
+document.querySelectorAll(".link-list>li>a").forEach(a => a.target ||= '_blank')
