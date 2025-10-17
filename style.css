@@ -28,7 +28,7 @@ body {
 
 /* Create an active/current tablink class */
 .tab button.active {
-	background-color: slateblue;
+	background-color: SlateBlue;
 	color: white;
 }
 
