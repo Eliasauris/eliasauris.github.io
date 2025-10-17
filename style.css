@@ -2,7 +2,7 @@
 	/*--tab-color: rgb(12, 154, 201);*/
 	--tab-color: royalblue;
 	--tab-background-color: color-mix(in srgb, var(--tab-color), white 35%);
-	--tab-button-hover-color: var(--tab-color);
+	--tab-button-hover-color: color-mix(in srgb, var(--tab-color), white 15%);
 	--tab-button-active-color: var(--tab-color);
 }
 
