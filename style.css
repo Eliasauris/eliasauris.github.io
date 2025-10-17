@@ -1,3 +1,10 @@
+:root {
+	/*--tab-color: rgb(12, 154, 201);*/
+	--tab-color: royalblue;
+	--tab-background-color: color-mix(in srgb, var(--tab-color), white 35%);
+	--tab-button-hover-color: var(--tab-color);
+	--tab-button-active-color: var(--tab-color);
+}
 
 body {
 	font-family: Arial;
@@ -7,12 +14,12 @@ body {
 .tab {
 	overflow: hidden;
 	border: 2px solid #ccc;
-	background-color: skyblue;
+	background-color: var(--tab-background-color);
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-	background-color: skyblue;
+	background-color: var(--tab-background-color);
 	float: left;
 	border: none;
 	outline: none;
@@ -24,12 +31,12 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-	background-color: steelblue;
+	background-color: var(--tab-button-hover-color);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-	background-color: darkcyan;
+	background-color: var(--tab-button-active-color);
 	color: white;
 }
 
@@ -41,12 +48,10 @@ body {
 	border-top: none;
 }
 
-
-
 .link-list>li {
 	margin-top: 0.5em;
 }
 
 /*prevents links from graying out when clicked*/
-.link-list>li>a {color: blue}
-.link-list>li>a:active {color: red}
+.link-list>li>a{color:blue}
+.link-list>li>a:active{color:red}
