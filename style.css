@@ -6,12 +6,12 @@ body {
 .tab {
 	overflow: hidden;
 	border: 2px solid #ccc;
-	background-color: #84de6f;
+	background-color: skyblue;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-	background-color: #84de6f;
+	background-color: skyblue;
 	float: left;
 	border: none;
 	outline: none;
@@ -23,12 +23,12 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-	background-color: #79ba6a;
+	background-color: steelblue;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-	background-color: #4b7542;
+	background-color: stateblue;
 	color: white;
 }
 
