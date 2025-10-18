@@ -5,11 +5,11 @@ function openTab(ev, name) {
 	const tab = ev.target
 	name ||= tab.innerText
 	const tabframe = tab.parentElement.parentElement
-	const container = tabframe.querySelector(".tab-content-container")
-	const tabcontent = container.querySelector("[data-tab='" + name + "']")
+	const container = tabframe.querySelector(":scope > .tab-content-container")
+	const tabcontent = container.querySelector(":scope > .tab-content[data-tab='" + name + "']")
 
 	for (const e of container.children) e.style.display = e == tabcontent ? 'block' : 'none'
-	for (const t of tabframe.querySelectorAll(".tab-bar>button")) setElementClassEnabled(t, 'active', false)
+	for (const t of tabframe.querySelectorAll(":scope > .tab-bar>button")) setElementClassEnabled(t, 'active', false)
 
 	setElementClassEnabled(tab, 'active', true)
 }
